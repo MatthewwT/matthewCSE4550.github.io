@@ -1,4 +1,4 @@
-<!doctype html>
+s<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -34,12 +34,14 @@
     
     <!-- Custom styles for this template -->
     <link href="signup.css" rel="stylesheet">
+
   </head>
   <body class="text-center">
     
 <main class="form-signup">
     <form>
         <!--<img class="mb-4" src="#" alt="" width="72" height="57">-->
+      
         <h1 class="h3 mb-3 fw-normal">Sign up</h1>
 
         <div class="form-floating">
@@ -54,12 +56,81 @@
 		<input type="mkey" class="w-50 form-control" id="floatingmkey" placeholder="Manager Key">
 		
 
-        <button class="w-100 btn btn-primary btn-lg" type="submit">Create Account</button> <!--Need to add "Email verification has been sent to 'email'"-->
+        <button class="w-100 btn btn-primary btn-lg" id="submitData" type="submit">Create Account</button> <!--Need to add "Email verification has been sent to 'email'"-->
         
     </form>
 </main>
+  
+ <!--firebase stuff-->
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signOut
+    } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+    import {getDatabase, set, ref, update} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
 
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
-    
+  const firebaseConfig = {
+    apiKey: "AIzaSyDmA7fCrmuG-omROI3Ibjl_GjM3y7RBlPY",
+    authDomain: "the-managers-4de5b.firebaseapp.com",
+    databaseURL: "https://the-managers-4de5b-default-rtdb.firebaseio.com",
+    projectId: "the-managers-4de5b",
+    storageBucket: "the-managers-4de5b.appspot.com",
+    messagingSenderId: "623742633722",
+    appId: "1:623742633722:web:967d373cf0bf2d5126eb43",
+    measurementId: "G-1NND7PD1NC"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth();
+  const database = getDatabase(app);
+
+  // Sign up user
+  submitData.addEventListener('click', (e) => {
+    e.preventDefault();
+    var email = document.getElementById('floatingInput').value;
+    var password = document.getElementById('floatingPassword').value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                // ... user.uid
+                set(ref(database, 'users/' + user.uid), {
+                    email: email,
+                    password: password
+                })
+                    .then(() => {
+                        // Data saved successfully!
+                        alert('user created successfully');
+        
+                    })
+                    .catch((error) => {
+                        // The write failed...
+                        alert(error);
+                    });
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+                alert(errorMessage);
+            });
+          })
+  
+</script>
+
   </body>
 </html>
+
+
+  
