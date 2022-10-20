@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html>
     <head>
         <!-- CSS only -->
@@ -6,7 +6,7 @@
 
         <title>Profile</title>
     </head>
-
+	<link href="profile.css" rel="stylesheet">
     <body>
         <header>
             <div class="container">
@@ -18,116 +18,214 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+                            <a class="nav-link" href="test3.html">Profile</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="test2.html">Tasks</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="test3.html">Schedule</a>
+						<li class="nav-item">
+                            <a class="nav-link" href="test5.html">Manage My Tasks</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="test4.html">Change email/password</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+						<li class="nav-item">
+                            <a class="nav-link" href="test4.html">Manage Tasks</a>
                         </li>
                         </ul>
+						<ul class="navbar-nav"  style="float: right; margin-right: 20px;">
+							<li><a class="nav-link active" aria-current="page" href="signin.html">Login</a></li>
+						</ul>
+						
                         <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
                     </div>
                 </nav>
             </div>
         </header>
-        <h1>Schedule & Expertise</h1> 
-        <div class="container">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                Skills/Expertise 1
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                Skills/Expertise 2
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                <label class="form-check-label" for="defaultCheck3">
-                Skills/Expertise 3
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                <label class="form-check-label" for="defaultCheck4">
-                Skills/Expertise 4
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                <label class="form-check-label" for="defaultCheck5">
-                Skills/Expertise 5
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-                <label class="form-check-label" for="defaultCheck6">
-                Skills/Expertise 6
-                </label>
-            </div>
-        </div>
+        <h1>Profile</h1> 
+        <body class="container">
+            <div class="card mb-3">
+			  <div class="row g-0">
+				<div class="col-md-4">
+				  <img src="https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=" class="img-fluid rounded-start" alt="...">
+				</div>
+				<div class="col-md-8">
+				  <div class="card-body">
+					<h1 class="card-title">Employee Name</h1>
+					<p class="card-text">Brief biography of employee.</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
 
-          <div class="container">
-            <div class="input-group mb-3">
-                <span class="input-group-text">Monday</span>
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                  <label for="floatingInputGroup1">Input time here (ex: 8:00AM - 4:00PM)</label>
-                </div>
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text">Tuesday</span>
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                  <label for="floatingInputGroup1">Input time here (ex: 8:00AM - 4:00PM)</label>
-                </div>
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text">Wednesday</span>
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                  <label for="floatingInputGroup1">Input time here (ex: 8:00AM - 4:00PM)</label>
-                </div>
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text">Thursday</span>
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                  <label for="floatingInputGroup1">Input time here (ex: 8:00AM - 4:00PM)</label>
-                </div>
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text">Friday</span>
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                  <label for="floatingInputGroup1">Input time here (ex: 8:00AM - 4:00PM)</label>
-                </div>
-              </div>
+			  <ul class="list-group" style="width: 50%; float: left; margin-right: 50px;">
+				  <li class="list-group-item py-3 list-group-test"> Skills 
 
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-outline-secondary" style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						  Assign Skills
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<h1 class="modal-title fs-7" id="exampleModalLabel">Skills</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							  </div>
+							  <div class="modal-body">
+								<ul class="list-group">
+								  <li class="list-group-item">
+									<input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+									<label class="form-check-label" for="firstCheckbox">Skill 8</label>
+								  </li>
+								  <li class="list-group-item">
+									<input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+									<label class="form-check-label" for="secondCheckbox">Skill 9</label>
+								  </li>
+								  <li class="list-group-item">
+									<input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+									<label class="form-check-label" for="thirdCheckbox">Skill 10</label>
+								  </li>
+								  <li class="list-group-item">
+									<input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+									<label class="form-check-label" for="thirdCheckbox">Skill 11</label>
+								  </li>
+								  <li class="list-group-item">
+									<input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+									<label class="form-check-label" for="thirdCheckbox">Skill 12</label>
+								  </li>
+								  <li class="list-group-item">
+									<input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+									<label class="form-check-label" for="thirdCheckbox">Skill 13</label>
+								  </li>
+								</ul>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</li>
+
+				  <li class="list-group-item list-group-item-warning">Skill 1 <button type="button" class="btn btn-close btn-sm" style="float: right;" aria-label="Close"></button></li>
+				  <li class="list-group-item list-group-item-warning">Skill 2 <button type="button" class="btn btn-close btn-sm" style="float: right;" aria-label="Close"></button></li>
+				  <li class="list-group-item list-group-item-warning">Skill 3 <button type="button" class="btn btn-close btn-sm" style="float: right;" aria-label="Close"></button></li>
+				  <li class="list-group-item list-group-item-warning">Skill 4 <button type="button" class="btn btn-close btn-sm" style="float: right;" aria-label="Close"></button></li>
+				  <li class="list-group-item list-group-item-warning">Skill 5 <button type="button" class="btn btn-close btn-sm" style="float: right;" aria-label="Close"></button></li>
+				  <li class="list-group-item list-group-item-warning">Skill 6 <button type="button" class="btn btn-close btn-sm" style="float: right;" aria-label="Close"></button></li>
+				  <li class="list-group-item list-group-item-warning">Skill 7 <button type="button" class="btn btn-close btn-sm" style="float: right;" aria-label="Close"></button></li>
+			  </ul>
+
+
+				<ul class="list-group" style="width: 40%; float: left; margin-right: 50px;">
+					<li class="list-group-item py-3 list-group-test-2">Availability</li>
+						<div class="list-group">
+							<div class="input-group mb-1">
+							  <label class="input-group-text" for="inputGroupSelect01">Monday</label>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Hour</option>
+								<option value="1">1 hour</option>
+								<option value="2">2 hours</option>
+								<option value="3">3 hours</option>
+								<option value="4">4 hours</option>
+								<option value="5">5 hours</option>
+								<option value="6">6 hours</option>
+							  </select>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Minute</option>
+								<option value="1">15 minutes</option>
+								<option value="2">30 minutes</option>
+								<option value="3">45 minutes</option>
+							  </select>
+							</div>
+							<div class="input-group mb-1">
+							  <label class="input-group-text" for="inputGroupSelect01">Tuesday</label>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Hour</option>
+								<option value="1">1 hour</option>
+								<option value="2">2 hours</option>
+								<option value="3">3 hours</option>
+								<option value="4">4 hours</option>
+								<option value="5">5 hours</option>
+								<option value="6">6 hours</option>
+							  </select>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Minute</option>
+								<option value="1">15 minutes</option>
+								<option value="2">30 minutes</option>
+								<option value="3">45 minutes</option>
+							  </select>
+							</div>
+							<div class="input-group mb-1">
+							  <label class="input-group-text" for="inputGroupSelect01">Wednesday</label>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Hour</option>
+								<option value="1">1 hour</option>
+								<option value="2">2 hours</option>
+								<option value="3">3 hours</option>
+								<option value="4">4 hours</option>
+								<option value="5">5 hours</option>
+								<option value="6">6 hours</option>
+							  </select>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Minute</option>
+								<option value="1">15 minutes</option>
+								<option value="2">30 minutes</option>
+								<option value="3">45 minutes</option>
+							  </select>
+							</div>
+							<div class="input-group mb-1">
+							  <label class="input-group-text" for="inputGroupSelect01">Thursday</label>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Hour</option>
+								<option value="1">1 hour</option>
+								<option value="2">2 hours</option>
+								<option value="3">3 hours</option>
+								<option value="4">4 hours</option>
+								<option value="5">5 hours</option>
+								<option value="6">6 hours</option>
+							  </select>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Minute</option>
+								<option value="1">15 minutes</option>
+								<option value="2">30 minutes</option>
+								<option value="3">45 minutes</option>
+							  </select>
+							</div>
+							<div class="input-group mb-1">
+							  <label class="input-group-text" for="inputGroupSelect01">Friday</label>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Hour</option>
+								<option value="1">1 hour</option>
+								<option value="2">2 hours</option>
+								<option value="3">3 hours</option>
+								<option value="4">4 hours</option>
+								<option value="5">5 hours</option>
+								<option value="6">6 hours</option>
+							  </select>
+							  <select class="form-select" id="inputGroupSelect01">
+								<option selected>Minute</option>
+								<option value="1">15 minutes</option>
+								<option value="2">30 minutes</option>
+								<option value="3">45 minutes</option>
+							  </select>
+							</div>
+							<button type="button" class="btn btn-success btn-lg">Submit</button>
+
+						</div>
+					</ul>
+
+
+
+			
+			
           </div>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
